@@ -1,3 +1,8 @@
+.parent {
+  background: var(--primaryBackgroundColor);
+  height: 100vh;
+}
+
 .chat-room-container {
   position: fixed;
   left: 0;
@@ -7,6 +12,12 @@
   display: flex;
   flex-direction: column;
   margin: 16px;
+  background: var(--primaryBackgroundColor);
+  color: var(--primaryTextColor);
+}
+
+.toggle-button {
+  align-self: flex-end;
 }
 
 .room-name {
@@ -32,6 +43,9 @@
   font-size: 20px;
   padding: 8px 12px;
   resize: none;
+  background: var(--primaryBackgroundColor);
+  color: var(--primaryTextColor);
+  outline: none;
 }
 
 .message-item {
@@ -60,6 +74,7 @@
   background: #31a24c;
   padding: 24px 12px;
   border: none;
+  outline: none;
 }
 
 .messages-container,
