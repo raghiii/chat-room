@@ -7,10 +7,10 @@ import './Theme/theme.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/chat-room">
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/room/:roomId" component={ChatRoom} />
+        <Route exact path="/:roomId" component={ChatRoom} />
       </Switch>
     </Router>
   );
